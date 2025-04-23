@@ -1,0 +1,101 @@
+console.log("problems solving part");
+
+// 1. Reverse a String
+// Problem: Reverse the characters in a given string.
+
+function reversString(str) {
+  return str.split("").reverse().join("");
+}
+
+const strResult = reversString("Bangladesh");
+// console.log(strResult)
+
+//====================================== 2
+
+// 2. Check for Palindrome
+// Problem: Check if a string reads the same forward and backward.
+
+function isPalindrome(str) {
+  const revers = str.split("").reverse().join("");
+  // console.log(revers)
+  const res = str !== revers;
+  return res;
+}
+
+const isPalin = isPalindrome("Madam");
+// console.log(isPalin)
+
+//=================================== 03
+
+// 3. FizzBuzz
+// Problem: Print numbers from 1 to 20. For multiples of 3, print "Fizz", for 5 print "Buzz", for both 3 and 5 print "FizzBuzz".
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    // console.log("FizzBuzz")
+  } else if (i % 3 === 0) {
+    // console.log("Fizz");
+  } else if (i % 5 === 0) {
+    // console.log("Buzz")
+  } else {
+    // console.log(i)
+  }
+}
+
+//========================================4
+
+// 4. Find the Largest Number in an Array
+
+function maxFind(numbers) {
+  return Math.max(...numbers);
+  // return Math.min(...numbers)
+}
+
+const mxFind = maxFind([10, 2, 5, 654, 8, 21, 5, 7, 5, 87, 4, 8]);
+// console.log(mxFind)
+
+//======================================== 05
+
+// 5. Factorial of a Number
+// Problem: Find the factorial of a number (n!)
+
+function factorial(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
+  }
+}
+
+const factoriResult = factorial(4);
+// console.log(factoriResult);
+
+
+//======================== 06
+
+// 6. Count Vowels in a String
+
+function contentVoules(str){
+
+    return (str.match(/[aeiou]/gi) || []).length;
+}
+
+const contentResult = contentVoules("bangladesh")
+// console.log(contentResult)
+
+const numbers = ["a","e","i","o","u","A","E","I","O","U"];
+
+function findVoules(sentence){
+    let count = 0;
+    let letter = Array.from(sentence)
+
+   letter.forEach(function(value){
+    if(numbers.includes(value)){
+     count++
+    }
+   })
+      
+    return count;
+}
+const xValues = findVoules("bangladesh");
+console.log(xValues)
