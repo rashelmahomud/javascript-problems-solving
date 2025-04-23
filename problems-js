@@ -98,4 +98,32 @@ function findVoules(sentence){
     return count;
 }
 const xValues = findVoules("bangladesh");
-console.log(xValues)
+// console.log(xValues)
+
+
+//======================= 07
+
+// 5. Remove Duplicates from an Array
+// Q: Write a function that removes duplicates from an array.
+
+
+function removeDuplicate(...arr){
+  
+   return [...new Set(arr)]
+  
+}
+
+const removeX = removeDuplicate([1,2,5,2,5,6,5,8,2])
+// console.log(removeX)
+
+function remove2Duplicate(arr){
+
+return arr.filter((item,index) => arr.indexOf(item) === index)
+
+}
+
+const removeD = remove2Duplicate([1,2,54,,55,5,5,2,6,9,85,2]) 
+
+console.log(removeD)
+
+
