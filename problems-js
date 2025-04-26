@@ -1,6 +1,6 @@
 console.log("problems solving part");
 
-// 1. Reverse a String
+// Question:  Reverse a String
 // Problem: Reverse the characters in a given string.
 
 function reversString(str) {
@@ -12,7 +12,7 @@ const strResult = reversString("Bangladesh");
 
 //====================================== 2
 
-// 2. Check for Palindrome
+// Question: . Check for Palindrome
 // Problem: Check if a string reads the same forward and backward.
 
 function isPalindrome(str) {
@@ -27,7 +27,7 @@ const isPalin = isPalindrome("Madam");
 
 //=================================== 03
 
-// 3. FizzBuzz
+// Question:  FizzBuzz
 // Problem: Print numbers from 1 to 20. For multiples of 3, print "Fizz", for 5 print "Buzz", for both 3 and 5 print "FizzBuzz".
 
 for (let i = 1; i <= 20; i++) {
@@ -44,7 +44,7 @@ for (let i = 1; i <= 20; i++) {
 
 //========================================4
 
-// 4. Find the Largest Number in an Array
+// Question: . Find the Largest Number in an Array
 
 function maxFind(numbers) {
   return Math.max(...numbers);
@@ -56,7 +56,7 @@ const mxFind = maxFind([10, 2, 5, 654, 8, 21, 5, 7, 5, 87, 4, 8]);
 
 //======================================== 05
 
-// 5. Factorial of a Number
+// Question:  Factorial of a Number
 // Problem: Find the factorial of a number (n!)
 
 function factorial(number) {
@@ -73,7 +73,7 @@ const factoriResult = factorial(4);
 
 //======================== 06
 
-// 6. Count Vowels in a String
+// Question:  Count Vowels in a String
 
 function contentVoules(str){
 
@@ -103,7 +103,7 @@ const xValues = findVoules("bangladesh");
 
 //======================= 07
 
-// 5. Remove Duplicates from an Array
+// Question: . Remove Duplicates from an Array
 // Q: Write a function that removes duplicates from an array.
 
 
@@ -127,7 +127,7 @@ const removeD = remove2Duplicate([1,2,54,,55,5,5,2,6,9,85,2])
 // console.log(removeD)
 
 
-//====================================== 08
+//Question: ====================================== 08
 
 function secoundLargest(arr){
   
@@ -140,10 +140,46 @@ const secoundLarg = secoundLargest([1,2,56,5,8,5,66])
 
 
 //================================   09
+//Question:  Find Longest Word in a String
 
 
 
+function longestStringWord(str){
 
+  const words = str.split(" ");
+  let longWord = "";
+  for(let word of words){
+    if(word.length > longWord){
+      longWord = word.length
+    }
+    // if(word.length > longWord.length){
+    //   longWord = word        {this is a word finding code}
+    // }
+  }
+ 
+  
+  return longWord;
+
+}
+const longWorldResult = longestStringWord("The Quick brown fox jumped over the lazy dog")
+// console.log(longWorldResult)
+
+
+
+//============================= 10
+
+//Question:    Sum All Numbers in an Array
+
+
+function sumNumber(nums){
+  return nums.reduce((total,num) => total + num)
+}
+
+const resultSum = sumNumber([2,3,6,5,4])
+// console.log(resultSum)
+
+
+//========================================
 
 
 
