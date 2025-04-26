@@ -127,18 +127,23 @@ const removeD = remove2Duplicate([1,2,54,,55,5,5,2,6,9,85,2])
 // console.log(removeD)
 
 
-//======================================
+//====================================== 08
 
 function secoundLargest(arr){
   
  const uni = arr.sort((a,b) => b - a)
   return uni[1];
-
-
-
 }
 
 const secoundLarg = secoundLargest([1,2,56,5,8,5,66])
-console.log(secoundLarg)
+// console.log(secoundLarg)
+
+
+//================================   09
+
+
+
+
+
 
 
