@@ -10,7 +10,7 @@ function reversString(str) {
 const strResult = reversString("Bangladesh");
 // console.log(strResult)
 
-//====================================== 2
+//====================================== problems 01
 
 // Question: . Check for Palindrome
 // Problem: Check if a string reads the same forward and backward.
@@ -25,7 +25,7 @@ function isPalindrome(str) {
 const isPalin = isPalindrome("Madam");
 // console.log(isPalin)
 
-//=================================== 03
+//=================================== problems 02
 
 // Question:  FizzBuzz
 // Problem: Print numbers from 1 to 20. For multiples of 3, print "Fizz", for 5 print "Buzz", for both 3 and 5 print "FizzBuzz".
@@ -42,7 +42,7 @@ for (let i = 1; i <= 20; i++) {
   }
 }
 
-//========================================4
+//======================================== problems 03
 
 // Question: . Find the Largest Number in an Array
 
@@ -54,7 +54,7 @@ function maxFind(numbers) {
 const mxFind = maxFind([10, 2, 5, 654, 8, 21, 5, 7, 5, 87, 4, 8]);
 // console.log(mxFind)
 
-//======================================== 05
+//======================================== problems 04
 
 // Question:  Factorial of a Number
 // Problem: Find the factorial of a number (n!)
@@ -71,7 +71,7 @@ const factoriResult = factorial(4);
 // console.log(factoriResult);
 
 
-//======================== 06
+//======================== problems 05
 
 // Question:  Count Vowels in a String
 
@@ -101,7 +101,7 @@ const xValues = findVoules("bangladesh");
 // console.log(xValues)
 
 
-//======================= 07
+//======================= problems 06
 
 // Question: . Remove Duplicates from an Array
 // Q: Write a function that removes duplicates from an array.
@@ -127,7 +127,7 @@ const removeD = remove2Duplicate([1,2,54,,55,5,5,2,6,9,85,2])
 // console.log(removeD)
 
 
-//Question: ====================================== 08
+//Question: ====================================== problems 07
 
 function secoundLargest(arr){
   
@@ -139,7 +139,7 @@ const secoundLarg = secoundLargest([1,2,56,5,8,5,66])
 // console.log(secoundLarg)
 
 
-//================================   09
+//================================  problems 08
 //Question:  Find Longest Word in a String
 
 
@@ -166,7 +166,7 @@ const longWorldResult = longestStringWord("The Quick brown fox jumped over the l
 
 
 
-//============================= 10
+//============================= problems 09
 
 //Question:    Sum All Numbers in an Array
 
@@ -179,7 +179,19 @@ const resultSum = sumNumber([2,3,6,5,4])
 // console.log(resultSum)
 
 
-//========================================
+//======================================== problems 10
+
+//Queston :  11. Find the Index of an Element in an Array
+// Problem: Return the index of the first occurrence, or -1 if not found.
+
+function findIndex(arr, value) {
+  return (trd = arr.indexOf(value));
+}
+
+const findResult = findIndex([10, 20, 30, 40, 52], 40);
+
+const findResult1 = findIndex([10, 20, 30, 40], 50);
+// console.log(findResult)
 
 
 
